@@ -1,4 +1,4 @@
-package src.Algorithms.Recursion;
+package src.algorithms.recursion;
 
 public class SumNNumbers {
     public static void main(String[] args) {

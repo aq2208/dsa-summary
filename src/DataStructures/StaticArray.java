@@ -1,8 +1,8 @@
-package src.DataStructures;
+package src.datastructures;
 
 import java.util.Arrays;
 
-public class Array {
+public class StaticArray {
 
     public static void main(String[] args) {
 

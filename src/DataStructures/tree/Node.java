@@ -1,4 +1,4 @@
-package src.DataStructures.Trees;
+package src.datastructures.tree;
 
 public class Node {
 

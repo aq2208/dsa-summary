@@ -1,4 +1,4 @@
-package src.OM;
+package src.others.om;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
 package src.datastructures;
 
-public class DSA_Queue {
+public class DynamicArray {
 }

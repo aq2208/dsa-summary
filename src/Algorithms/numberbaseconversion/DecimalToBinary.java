@@ -1,4 +1,4 @@
-package src.Algorithms.NumberBasesConversion;
+package src.algorithms.numberbaseconversion;
 
 public class DecimalToBinary {
     public static void main(String[] args) {

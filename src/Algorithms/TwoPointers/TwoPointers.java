@@ -1,4 +1,4 @@
-package src.Algorithms.TwoPointers;
+package src.algorithms.twopointers;
 
 public class TwoPointers {
 }
