@@ -1,27 +1,6 @@
 package src.algorithms.sorting;
 
-import java.util.Random;
-
 public class QuickSort {
-    public static void main(String[] args) {
-        //Randomly create an array of numbers to perform sorting algorithm
-        Random rand = new Random();
-        int[] arr = new int[10];
-
-        for(int i = 0; i < arr.length; i++) {
-            arr[i] = rand.nextInt(1000);
-        }
-
-        System.out.println("Before: ");
-        printArray(arr);
-
-        //Sorting algorithm here
-
-
-        System.out.println("\nAfter: ");
-        printArray(arr);
-    }
-
     //Quick Sort idea: Choose one of the number in the array as the pivot (choose the last element of the array)
     //After choosing a pivot, move all the elements in the array that are less than the pivot to the left of the pivot
     //And move all the elements that are greater than the pivot to the right of the pivot
@@ -75,11 +54,5 @@ public class QuickSort {
         int temp = arr[index1];
         arr[index1] = arr[index2];
         arr[index2] = temp;
-    }
-
-    public static void printArray(int[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + "  ");
-        }
     }
 }
