@@ -1,4 +1,4 @@
-package src.datastructures.tree;
+package src.datastructures.binarytree;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -9,6 +9,23 @@ public class BinarySearchTree {
 
     public BinarySearchTree() {
         root = null;
+    }
+
+    //Searching for a Node
+    public boolean search(Node root, int target) {
+        if (root == null) {
+            return false;
+        }
+
+        if (root.data == target) {
+            return true;
+        }
+
+        if (target < root.data) {
+            return search(root.left, target);
+        } else {
+            return search(root.right, target);
+        }
     }
 
     //Binary Tree Insertion
@@ -33,7 +50,7 @@ public class BinarySearchTree {
         return root;
     }
 
-    //Tree Traversals
+    // Depth First Search
     public void preOrder(Node root) {  //root can be root of the entire tree or root of the subtree
         if(root == null) {
             return;
@@ -64,6 +81,7 @@ public class BinarySearchTree {
         System.out.println(root.data + " ");
     }
 
+    // Breadth First Search
     public void breadthFirstTraversal(Node root) {  //a.k.a Level-Order Traversal
         if (root == null) {
             return;
@@ -75,7 +93,7 @@ public class BinarySearchTree {
         while (!queue.isEmpty()) {
             Node current = queue.poll();  //Dequeue the first Node in the Queue
 
-            System.out.println(current.data + " ");  //Print out the root Node
+            System.out.println(current.data + " ");  //Print out the dequeued Node
 
             //Enqueue the children of the dequeued node, if they exist
             if (current.left != null) {
@@ -103,8 +121,6 @@ public class BinarySearchTree {
     public Node levelOrderConstructTree(int[] preOrder, int start, int end) {
         return null;
     }
-
-    //Searching for a Node
 
     //Height of the Tree
     public int height(Node root) {
@@ -161,6 +177,7 @@ public class BinarySearchTree {
         return root;
     }
 
+    // Find the Successor Node (the smallest node in the right subtree)
     private Node findSuccessor(Node node) {
         while (node.left != null) {
             node = node.left;
