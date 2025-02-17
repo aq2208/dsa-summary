@@ -1,4 +1,4 @@
-package src.datastructures;
+package src.datastructures.array;
 
 import java.util.Arrays;
 
@@ -75,6 +75,8 @@ public class StaticArray {
                 {4, 5, 6}
         };
         System.out.println(matrix[0][2]); // matrix[row][col]
+
+        Integer[] subArr = Arrays.copyOfRange(numbers, 0, 0);
     }
 
 }

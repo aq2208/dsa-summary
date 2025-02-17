@@ -1,4 +1,4 @@
-package src.datastructures;
+package src.datastructures.queue;
 
 import java.util.LinkedList;
 import java.util.Queue;
